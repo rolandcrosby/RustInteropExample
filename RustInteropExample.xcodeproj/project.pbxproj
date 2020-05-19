@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A13A1CF247460A700FD20E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13A1CE247460A700FD20E7 /* AppDelegate.swift */; };
+		2A13A1D1247460A700FD20E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13A1D0247460A700FD20E7 /* ContentView.swift */; };
+		2A13A1D3247460AC00FD20E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A13A1D2247460AC00FD20E7 /* Assets.xcassets */; };
+		2A13A1D6247460AC00FD20E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A13A1D5247460AC00FD20E7 /* Preview Assets.xcassets */; };
+		2A13A1D9247460AC00FD20E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A13A1D7247460AC00FD20E7 /* Main.storyboard */; };
+		2A13A1E3247460DA00FD20E7 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 2A13A1E2247460DA00FD20E7 /* SwiftProtobuf */; };
+		2A13A1F1247466B900FD20E7 /* libexample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A13A1ED2474666B00FD20E7 /* libexample.a */; };
+		2A13A1F4247469FF00FD20E7 /* RustInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13A1F3247469FF00FD20E7 /* RustInterface.swift */; };
+		2A13A1F624747D1000FD20E7 /* example.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13A1F524747D1000FD20E7 /* example.pb.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A13A1EA2474666B00FD20E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A13A1E42474666B00FD20E7 /* example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA6043A2E800577EF1B65456;
+			remoteInfo = "example-cdylib";
+		};
+		2A13A1EC2474666B00FD20E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A13A1E42474666B00FD20E7 /* example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA60540D779C83F96E87A537;
+			remoteInfo = "example-staticlib";
+		};
+		2A13A1EE247466AB00FD20E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A13A1E42474666B00FD20E7 /* example.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CA60E7FAFF88A4D3654A4F3B;
+			remoteInfo = "example-staticlib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A13A1CB247460A700FD20E7 /* RustInteropExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustInteropExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A13A1CE247460A700FD20E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A13A1D0247460A700FD20E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A13A1D2247460AC00FD20E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A13A1D5247460AC00FD20E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A13A1D8247460AC00FD20E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A13A1DA247460AC00FD20E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A13A1DB247460AC00FD20E7 /* RustInteropExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RustInteropExample.entitlements; sourceTree = "<group>"; };
+		2A13A1E42474666B00FD20E7 /* example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = example.xcodeproj; path = example/example.xcodeproj; sourceTree = "<group>"; };
+		2A13A1F2247466ED00FD20E7 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A13A1F3247469FF00FD20E7 /* RustInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustInterface.swift; sourceTree = "<group>"; };
+		2A13A1F524747D1000FD20E7 /* example.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = example.pb.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A13A1C8247460A700FD20E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A13A1F1247466B900FD20E7 /* libexample.a in Frameworks */,
+				2A13A1E3247460DA00FD20E7 /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A13A1C2247460A600FD20E7 = {
+			isa = PBXGroup;
+			children = (
+				2A13A1E42474666B00FD20E7 /* example.xcodeproj */,
+				2A13A1CD247460A700FD20E7 /* RustInteropExample */,
+				2A13A1CC247460A700FD20E7 /* Products */,
+				2A13A1F0247466B900FD20E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A13A1CC247460A700FD20E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A13A1CB247460A700FD20E7 /* RustInteropExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A13A1CD247460A700FD20E7 /* RustInteropExample */ = {
+			isa = PBXGroup;
+			children = (
+				2A13A1F524747D1000FD20E7 /* example.pb.swift */,
+				2A13A1CE247460A700FD20E7 /* AppDelegate.swift */,
+				2A13A1D0247460A700FD20E7 /* ContentView.swift */,
+				2A13A1D2247460AC00FD20E7 /* Assets.xcassets */,
+				2A13A1D7247460AC00FD20E7 /* Main.storyboard */,
+				2A13A1DA247460AC00FD20E7 /* Info.plist */,
+				2A13A1DB247460AC00FD20E7 /* RustInteropExample.entitlements */,
+				2A13A1D4247460AC00FD20E7 /* Preview Content */,
+				2A13A1F2247466ED00FD20E7 /* Example-Bridging-Header.h */,
+				2A13A1F3247469FF00FD20E7 /* RustInterface.swift */,
+			);
+			path = RustInteropExample;
+			sourceTree = "<group>";
+		};
+		2A13A1D4247460AC00FD20E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A13A1D5247460AC00FD20E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A13A1E52474666B00FD20E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A13A1EB2474666B00FD20E7 /* libexample.dylib */,
+				2A13A1ED2474666B00FD20E7 /* libexample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A13A1F0247466B900FD20E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A13A1CA247460A700FD20E7 /* RustInteropExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A13A1DE247460AC00FD20E7 /* Build configuration list for PBXNativeTarget "RustInteropExample" */;
+			buildPhases = (
+				2A13A1C7247460A700FD20E7 /* Sources */,
+				2A13A1C8247460A700FD20E7 /* Frameworks */,
+				2A13A1C9247460A700FD20E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A13A1EF247466AB00FD20E7 /* PBXTargetDependency */,
+			);
+			name = RustInteropExample;
+			packageProductDependencies = (
+				2A13A1E2247460DA00FD20E7 /* SwiftProtobuf */,
+			);
+			productName = RustInteropExample;
+			productReference = 2A13A1CB247460A700FD20E7 /* RustInteropExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A13A1C3247460A600FD20E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = roland;
+				TargetAttributes = {
+					2A13A1CA247460A700FD20E7 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2A13A1C6247460A700FD20E7 /* Build configuration list for PBXProject "RustInteropExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A13A1C2247460A600FD20E7;
+			packageReferences = (
+				2A13A1E1247460DA00FD20E7 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			productRefGroup = 2A13A1CC247460A700FD20E7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2A13A1E52474666B00FD20E7 /* Products */;
+					ProjectRef = 2A13A1E42474666B00FD20E7 /* example.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2A13A1CA247460A700FD20E7 /* RustInteropExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2A13A1EB2474666B00FD20E7 /* libexample.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libexample.dylib;
+			remoteRef = 2A13A1EA2474666B00FD20E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A13A1ED2474666B00FD20E7 /* libexample.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libexample.a;
+			remoteRef = 2A13A1EC2474666B00FD20E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A13A1C9247460A700FD20E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A13A1D9247460AC00FD20E7 /* Main.storyboard in Resources */,
+				2A13A1D6247460AC00FD20E7 /* Preview Assets.xcassets in Resources */,
+				2A13A1D3247460AC00FD20E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A13A1C7247460A700FD20E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A13A1F4247469FF00FD20E7 /* RustInterface.swift in Sources */,
+				2A13A1D1247460A700FD20E7 /* ContentView.swift in Sources */,
+				2A13A1CF247460A700FD20E7 /* AppDelegate.swift in Sources */,
+				2A13A1F624747D1000FD20E7 /* example.pb.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A13A1EF247466AB00FD20E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "example-staticlib";
+			targetProxy = 2A13A1EE247466AB00FD20E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A13A1D7247460AC00FD20E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A13A1D8247460AC00FD20E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A13A1DC247460AC00FD20E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A13A1DD247460AC00FD20E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2A13A1DF247460AC00FD20E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RustInteropExample/RustInteropExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"RustInteropExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RustInteropExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolandcrosby.RustInteropExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustInteropExample/Example-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A13A1E0247460AC00FD20E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RustInteropExample/RustInteropExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"RustInteropExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RustInteropExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolandcrosby.RustInteropExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustInteropExample/Example-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A13A1C6247460A700FD20E7 /* Build configuration list for PBXProject "RustInteropExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A13A1DC247460AC00FD20E7 /* Debug */,
+				2A13A1DD247460AC00FD20E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A13A1DE247460AC00FD20E7 /* Build configuration list for PBXNativeTarget "RustInteropExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A13A1DF247460AC00FD20E7 /* Debug */,
+				2A13A1E0247460AC00FD20E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A13A1E1247460DA00FD20E7 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A13A1E2247460DA00FD20E7 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A13A1E1247460DA00FD20E7 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2A13A1C3247460A600FD20E7 /* Project object */;
+}

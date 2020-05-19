@@ -1,0 +1,16 @@
+syntax = "proto3";
+package example.protos;
+
+message UpdateUI {
+    string intro = 1;
+    repeated string lines = 2;
+}
+
+message UICommand {
+    oneof command {
+        CommandShuffle shuffle = 1;
+    }
+}
+
+message CommandShuffle {
+}

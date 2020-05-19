@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CA60F3B9BA6F8F93ADF0DC5B /* Cargo */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA6011C4E8E6385D12A9B397 /* Build configuration list for PBXAggregateTarget "Cargo" */;
+			buildPhases = (
+				CA6093127622DA9CDB138BCB /* Cargo build */,
+			);
+			dependencies = (
+			);
+			name = Cargo;
+			productName = Cargo;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		CA606E317BB44048E9E49944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA60A92177E3E1F592BE958D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA60F3B9BA6F8F93ADF0DC5B;
+			remoteInfo = Cargo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADDEDBA66A6E1 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		CA6043A2E800577EF1B65456 /* libexample.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libexample.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA60540D779C83F96E87A537 /* libexample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libexample.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6083B70880B1CE8BFFDD6C /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = Cargo.toml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		ADDEDBA66A6E2 /* Required Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				ADDEDBA66A6E1 /* libresolv.tbd */,
+			);
+			name = "Required Libraries";
+			sourceTree = "<group>";
+		};
+		CA6078123F67B9E45F00F9EC = {
+			isa = PBXGroup;
+			children = (
+				CA6083B70880B1CE8BFFDD6C /* Cargo.toml */,
+				ADDEDBA66A6E2 /* Required Libraries */,
+				CA60C1803E194E0A70DCCD15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA60C1803E194E0A70DCCD15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6043A2E800577EF1B65456 /* libexample.dylib */,
+				CA60540D779C83F96E87A537 /* libexample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA604C72A69339716C34482A /* example-cdylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA60AD2845A05E2092554E50 /* Build configuration list for PBXNativeTarget "example-cdylib" */;
+			buildPhases = (
+				CA6011DFE76C69685EE2519B /* Copy files (libexample.dylib) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA608B114B4C347DFB022B41 /* PBXTargetDependency */,
+			);
+			name = "example-cdylib";
+			productName = libexample.dylib;
+			productReference = CA6043A2E800577EF1B65456 /* libexample.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		CA60E7FAFF88A4D3654A4F3B /* example-staticlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA60EAE9DD9C67553E710EB8 /* Build configuration list for PBXNativeTarget "example-staticlib" */;
+			buildPhases = (
+				CA6001B3BE6DDA1667B22146 /* Copy files (libexample.a) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA608B114B4C347DFB022B41 /* PBXTargetDependency */,
+			);
+			name = "example-staticlib";
+			productName = libexample.a;
+			productReference = CA60540D779C83F96E87A537 /* libexample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA60A92177E3E1F592BE958D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					CA604C72A69339716C34482A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CA60E7FAFF88A4D3654A4F3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CA60F3B9BA6F8F93ADF0DC5B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA6011C4E8E6385D12A9B397 /* Build configuration list for PBXAggregateTarget "Cargo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA6078123F67B9E45F00F9EC;
+			productRefGroup = CA60C1803E194E0A70DCCD15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA604C72A69339716C34482A /* example-cdylib */,
+				CA60E7FAFF88A4D3654A4F3B /* example-staticlib */,
+				CA60F3B9BA6F8F93ADF0DC5B /* Cargo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA6001B3BE6DDA1667B22146 /* Copy files (libexample.a) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(CARGO_XCODE_PRODUCTS_DIR)/libexample.a",
+			);
+			name = "Copy files (libexample.a)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/libexample.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ln -f \"${CARGO_XCODE_PRODUCTS_DIR}/libexample.a\" \"${BUILT_PRODUCTS_DIR}/\"";
+		};
+		CA6011DFE76C69685EE2519B /* Copy files (libexample.dylib) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(CARGO_XCODE_PRODUCTS_DIR)/libexample.dylib",
+			);
+			name = "Copy files (libexample.dylib)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/libexample.dylib",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ln -f \"${CARGO_XCODE_PRODUCTS_DIR}/libexample.dylib\" \"${BUILT_PRODUCTS_DIR}/\"\n";
+		};
+		CA6093127622DA9CDB138BCB /* Cargo build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Cargo.toml",
+			);
+			name = "Cargo build";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e; export PATH=$PATH:~/.cargo/bin:/usr/local/bin;\nif [ \"$ACTION\" = \"clean\" ]; then\n\tcargo clean;\nelse\n\tcargo build $CARGO_FLAGS;\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA608B114B4C347DFB022B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA60F3B9BA6F8F93ADF0DC5B /* Cargo */;
+			targetProxy = CA606E317BB44048E9E49944 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA6020725B50EE09A4C7C6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = libexample;
+			};
+			name = Debug;
+		};
+		CA60325BC3007CCA41F909D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_GROUP = "";
+				INSTALL_MODE_FLAG = "";
+				INSTALL_OWNER = "";
+				PRODUCT_NAME = example;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA60832342489A49FC123FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = libexample;
+			};
+			name = Release;
+		};
+		CA609DDFD9DDC44AA1F3E12C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CARGO_FLAGS = "--release";
+				CARGO_TARGET_DIR = "$(BUILD_DIR)/cargo-target";
+				CARGO_XCODE_PRODUCTS_DIR = "$(BUILD_DIR)/cargo-target/release";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = example;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA60D525FA49F6ABBB02C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_GROUP = "";
+				INSTALL_MODE_FLAG = "";
+				INSTALL_OWNER = "";
+				PRODUCT_NAME = example;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA60E2ABA1A3C7E634997760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CARGO_FLAGS = "";
+				CARGO_TARGET_DIR = "$(BUILD_DIR)/cargo-target";
+				CARGO_XCODE_PRODUCTS_DIR = "$(BUILD_DIR)/cargo-target/debug";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = example;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA6011C4E8E6385D12A9B397 /* Build configuration list for PBXAggregateTarget "Cargo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA609DDFD9DDC44AA1F3E12C /* Release */,
+				CA60E2ABA1A3C7E634997760 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA60AD2845A05E2092554E50 /* Build configuration list for PBXNativeTarget "example-cdylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60832342489A49FC123FD8 /* Release */,
+				CA6020725B50EE09A4C7C6E7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA60EAE9DD9C67553E710EB8 /* Build configuration list for PBXNativeTarget "example-staticlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60D525FA49F6ABBB02C5CE /* Release */,
+				CA60325BC3007CCA41F909D4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA60A92177E3E1F592BE958D /* Project object */;
+}
